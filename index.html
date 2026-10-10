@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieDev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-box">
+
+        <h1>Create your account:</h1>
+
+        <div class="oauth-buttons">
+
+            <button class="oauth-button">
+                <img src="media/google.png" alt="Google">
+                <span>Continue with Google</span>
+            </button>
+
+            <button class="oauth-button">
+                <img src="media/github.png" alt="GitHub">
+                <span>Continue with GitHub</span>
+            </button>
+
+            <button class="oauth-button">
+                <img src="media/discord.png" alt="Discord">
+                <span>Continue with Discord</span>
+            </button>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="form-fields">
+
+        <input type="email" placeholder="Email">
+
+        <input type="password" placeholder="Password">
+
+        <div class="password-field">
+
+        <input type="password" placeholder="Confirm password">
+
+        <p class="password-error">
+            Passwords do not match.
+        </p>
+
+    </div>
+
+</div>
+
+        <button class="create-account-button">
+            Create account
+        </button>
+
+        <div class="guest-option">
+            <span>-</span>
+            <a href="#">Start Discovering</a>
+            <span>-</span>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>
